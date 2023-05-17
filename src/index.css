@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 
+/* navbar active */
+.active{
+  @apply font-medium tracking-wide text-orange-400 transition-colors duration-200 hover:text-orange-600 p-6
+}
+
+.default{
+  @apply font-medium tracking-wide text-white transition-colors duration-200 hover:text-orange-600 p-6
+} 
 
 /* btn outline animation */
-
-
 .text {
   position: absolute;
   top: 9%;

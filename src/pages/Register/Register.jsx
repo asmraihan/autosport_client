@@ -3,23 +3,7 @@ import { FaGoogle } from "react-icons/fa";
 const Register = () => {
     return (
         <section className="min-h-screen flex items-stretch text-white ">
-        <div
-          className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
-          style={{
-            backgroundImage:
-              "url(https://i.ibb.co/gDmTmYy/bgcar2.jpg)"
-          }}
-        >
-          <div className="absolute bg-black opacity-60 inset-0 z-0" />
-          <div className="w-full px-24 z-10">
-            <h1 className="text-5xl font-bold text-left tracking-wide">
-              Keep it special
-            </h1>
-            <p className="text-3xl my-4">
-              Capture your personal memory in unique way, anywhere.
-            </p>
-          </div>
-        </div>
+        
         <div
           className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0"
           style={{ backgroundColor: "#161616" }}
@@ -69,6 +53,24 @@ const Register = () => {
              <h2>Login with Google</h2>
               <FaGoogle></FaGoogle>
             </div>
+          </div>
+          
+        </div>
+        <div
+          className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
+          style={{
+            backgroundImage:
+              "url(https://i.ibb.co/gDmTmYy/bgcar2.jpg)"
+          }}
+        >
+          <div className="absolute bg-black opacity-60 inset-0 z-0" />
+          <div className="w-full px-24 z-10">
+            <h1 className="text-5xl font-bold text-left tracking-wide">
+              Keep it special
+            </h1>
+            <p className="text-3xl my-4">
+              Capture your personal memory in unique way, anywhere.
+            </p>
           </div>
         </div>
       </section>

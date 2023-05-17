@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -30,12 +30,12 @@ const NavBar = () => {
 
             {/* <Link to='/' className='w-full text-3xl font-bold text-[#df6800]'>AutoSport</Link> */}
             <ul className='hidden md:flex font-semibold whitespace-nowrap'>
-                <Link to='/' className='p-6'>Home</Link>
-                <Link to='/allcars' className='p-6'>All Cars</Link>
-                <Link to='/mycars' className='p-6'>My Cars</Link>
-                <Link to='/addcar' className='p-6'>Add Car</Link>
-                <Link to='/blog' className='p-6'>Blog</Link>
-                <Link to='/login' className='p-6'>Login</Link>
+                <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink>
+                <NavLink to='/allcars' className={({ isActive }) => (isActive ? 'active' : 'default')}>All Cars</NavLink>
+                <NavLink to='/mycars' className={({ isActive }) => (isActive ? 'active' : 'default')}>My Cars</NavLink>
+                <NavLink to='/addcar' className={({ isActive }) => (isActive ? 'active' : 'default')}>Add Car</NavLink>
+                <NavLink to='/blog' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
+                <NavLink to='/login' className={({ isActive }) => (isActive ? 'active' : 'default')}>Login</NavLink>
                 <Link to='/user' className='p-6'>User</Link>
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
