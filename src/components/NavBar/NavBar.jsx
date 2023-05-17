@@ -1,8 +1,39 @@
+import { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 
 const NavBar = () => {
+    const [nav, setNav] = useState(false);
+
+    const handleNav = () => {
+        setNav(!nav);
+    };
     return (
-        <div>
-            this nav
+        <div className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
+            <Link to='/' className='w-full text-3xl font-bold text-[#df6800]'>AutoSport</Link>
+            <ul className='hidden md:flex font-semibold whitespace-nowrap'>
+                <Link to='/' className='p-6'>Home</Link>
+                <Link to='/allcars' className='p-6'>All Cars</Link>
+                <Link to='/mycars' className='p-6'>My Cars</Link>
+                <Link to='/addcar' className='p-6'>Add Car</Link>
+                <Link to='/blog' className='p-6'>Blog</Link>
+                <Link to='/login' className='p-6'>Login</Link>
+                <Link to='/user' className='p-6'>User</Link>
+            </ul>
+            <div onClick={handleNav} className='block md:hidden'>
+                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            </div>
+            <ul className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#282828] ease-in-out duration-500 text-white font-semibold' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+                <h1 className='w-full text-3xl font-bold text-[#df6800] m-4'>AutoSport</h1>
+                <li className='p-4 border-b border-gray-600'> <Link to='/' >Home</Link></li>
+                <li className='p-4 border-b border-gray-600'><Link to='/allcars' className='p-4'>All Cars</Link></li>
+                <li className='p-4 border-b border-gray-600'><Link to='/mycars' className='p-4'>My Cars</Link></li>
+                <li className='p-4 border-b border-gray-600'><Link to='/addcar' className='p-4'>Add Car</Link></li>
+                <li className='p-4 border-b border-gray-600'><Link to='/blog' className='p-4'>Blog</Link></li>
+                <li className='p-4 border-b border-gray-600'><Link to='/login' className='p-4'>Login</Link></li>
+                <li className='p-4 '> <Link className='p-4' to='/user'>User</Link></li>
+            </ul>
         </div>
     );
 };
