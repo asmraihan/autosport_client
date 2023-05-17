@@ -31,7 +31,7 @@ const Footer = () => {
                         Contacts
                     </p>
                     <div className="flex">
-                        <p className="mr-1 text-gray-100">Phone:</p>
+                        <p className="mr-1 text-gray-100">🔗Phone:</p>
                         <a
                             href="tel:850-123-5021"
                             aria-label="Our phone"
@@ -42,7 +42,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="flex">
-                        <p className="mr-1 text-gray-100">Email:</p>
+                        <p className="mr-1 text-gray-100">🔗Email:</p>
                         <a
                             href="mailto:info@lorem.mail"
                             aria-label="Our email"
@@ -53,7 +53,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="flex">
-                        <p className="mr-1 text-gray-100">Address:</p>
+                        <p className="mr-1 text-gray-100">🔗Address:</p>
                         <a
                             href="https://www.google.com/maps"
                             target="_blank"
@@ -70,7 +70,7 @@ const Footer = () => {
                     <span className="text-base font-bold tracking-wide text-gray-200">
                         Social
                     </span>
-                    <div className="flex items-center mt-1 space-x-3">
+                    <div className="flex items-center mt-4 space-x-3">
                         <a
                             href="/"
                             className="text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400"

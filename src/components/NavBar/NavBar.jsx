@@ -10,23 +10,23 @@ const NavBar = () => {
         setNav(!nav);
     };
     return (
-        <div className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
-           <div className='flex justify-center items-center cursor-pointer nav-logo'>
-           <img className='w-16 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
-            <div className="svg-wrapper w-full  font-bold ">
-                
-        <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-          <rect id="shape" height="40" width="150" />
-        </svg>
-        
-        <div className="text" id="see_all_btn">
-            
-          <a to="/" className="flex justify-center items-center text-2xl font-extrabold ">
-            AutoSport
-          </a>
-        </div>
-      </div>
-           </div>
+        <Link to='/' className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
+            <div className='flex justify-center items-center cursor-pointer nav-logo'>
+                <img className='w-16 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
+                <div className="svg-wrapper w-full  font-bold ">
+
+                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="shape" height="40" width="150" />
+                    </svg>
+
+                    <div className="text" id="see_all_btn">
+
+                        <p className="flex justify-center items-center text-2xl font-extrabold ">
+                            AutoSport
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             {/* <Link to='/' className='w-full text-3xl font-bold text-[#df6800]'>AutoSport</Link> */}
             <ul className='hidden md:flex font-semibold whitespace-nowrap'>
@@ -51,7 +51,7 @@ const NavBar = () => {
                 <li className='p-4 border-b border-gray-600'><Link to='/login' className='p-4'>Login</Link></li>
                 <li className='p-4 '> <Link className='p-4' to='/user'>User</Link></li>
             </ul>
-        </div>
+        </Link>
     );
 };
 
