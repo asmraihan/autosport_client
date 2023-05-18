@@ -1,12 +1,26 @@
 import { useLoaderData } from "react-router-dom";
 import AllCarRow from "./AllCarRow";
+import useTitle from "../../hooks/useTitle";
 
 
 const AllCars = () => {
+    useTitle('All Cars')
     const allCars = useLoaderData()
     return (
         <div className="my-6 lg:my-12">
-            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock: <span className="text-orange-600"> {allCars?.length}</span></h3>
+            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock : <span className="text-orange-600"> {allCars?.length}</span></h3>
+
+           <div className="w-5/6 mx-auto my-6">
+           <div className="form-control">
+                <div className="input-group w-full">
+                    <input type="text" placeholder="Search…" className="input input-bordered w-full" />
+                    <button className="btn btn-square w-1/12">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                </div>
+            </div>
+           </div>
+
             <div className="overflow-x-auto w-5/6 mx-auto">
                 <table className="table table-zebra w-full">
                     {/* head */}

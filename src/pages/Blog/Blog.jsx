@@ -1,5 +1,7 @@
+import useTitle from "../../hooks/useTitle";
 
 const Blog = () => {
+  useTitle('Blog')
     return (
         <div>
         <section className="bg-zinc-800">

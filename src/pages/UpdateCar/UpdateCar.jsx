@@ -1,8 +1,10 @@
 
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import useTitle from '../../hooks/useTitle';
 
 const UpdateCar = () => {
+    useTitle('Update Car')
     const car = useLoaderData()
     const { _id , price, quantity, details } = car
 

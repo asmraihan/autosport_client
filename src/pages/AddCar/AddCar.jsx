@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from 'sweetalert2'
+import useTitle from "../../hooks/useTitle";
 
 const AddCar = () => {
+    useTitle('Add Car')
     const {user} = useContext(AuthContext)
 
     const handleAddCar = (e) => {

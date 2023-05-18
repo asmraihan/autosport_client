@@ -1,8 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 const CarDetails = () => {
-    const { _id, photo, name, seller, email, category, price, rating, quantity, details } = useLoaderData()
+    const singleCar = useLoaderData()
+    const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
     return (
         <>
             <div className="min-w-screen min-h-screen bg-zinc-800 flex items-center p-5 lg:p-10 overflow-hidden relative">
@@ -32,23 +34,17 @@ const CarDetails = () => {
                                     Email : {email}
                                 </h1>
                                 <h1 className="font-semibold text-lg mb-5">
-                                    Price : {price}
+                                    Price : ${price}
                                 </h1>
                                 <h1 className="font-semibold text-lg mb-5">
                                     Quantity : {quantity}
                                 </h1>
 
-                                <div className='flex'>
-                                    <h1 className="font-semibold text-lg mb-5">
+                                <div className='flex items-center mb-5 gap-2'>
+                                    <h1 className="font-semibold text-lg">
                                         Rating : {rating}
                                     </h1>
-                                    <div className="rating">
-                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />
-                                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
-                                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
-                                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
-                                    </div>
+                                    <Rating style={{ maxWidth: 120 }} value={Math.round(rating || 0)} readOnly/>
                                 </div>
 
                                 <p className="">
