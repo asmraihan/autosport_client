@@ -7,7 +7,7 @@ const Login = () => {
   const {signIn, googleSignIn} = useContext(AuthContext)
   const navigate = useNavigate()
   const location = useLocation()
-  // const from = location.state?.from?.pathname || '/'
+  const from = location.state?.from?.pathname || '/'
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -19,7 +19,7 @@ const Login = () => {
           .then(result=>{
             const loggedUser = result.user
             // console.log(loggedUser)
-            // navigate(from, {replace : true})
+            navigate(from, {replace : true})
           })
           .catch(error=>{
             setError(error.message)
@@ -34,7 +34,7 @@ const Login = () => {
         .then(result=>{
           const user = result.user
           // console.log(user)
-          // navigate(from, {replace : true})
+          navigate(from, {replace : true})
         
       })
       .catch(error=>{
