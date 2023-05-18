@@ -1,5 +1,6 @@
 
 import { FaEdit, FaTimesCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CarRow = ({ singleCar,handleDelete }) => {
     const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
@@ -30,10 +31,12 @@ const CarRow = ({ singleCar,handleDelete }) => {
                 <button className="btn btn-ghost btn-xs">details</button>
             </th>
             <td>
-                <button  className="flex gap-1 items-center rounded-lg bg-[#fe9647] text-lg hover:scale-110 transition-all duration-300 p-2 font-bold text-white hover:bg-[#E56707] m-2 tooltip tooltip-right"
+               <Link to={`/updatecar/${_id}`}>
+               <button  className="flex gap-1 items-center rounded-lg bg-[#fe9647] text-lg hover:scale-110 transition-all duration-300 p-2 font-bold text-white hover:bg-[#E56707] m-2 tooltip tooltip-right"
                 data-tip="Edit">
                     <FaEdit></FaEdit>
                 </button>
+               </Link>
                 <button onClick={()=>handleDelete(_id)} className="flex gap-1 items-center rounded-lg bg-[#db8484] text-lg hover:scale-110 transition-all duration-300 p-2  font-bold text-white hover:bg-[#e50707] m-2 tooltip tooltip-right"
                 data-tip="Delete">
                     <FaTimesCircle></FaTimesCircle>
