@@ -9,8 +9,8 @@ const AllCarRow = ({ singleCar }) => {
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
-                        <div className="rounded w-24 h-24">
-                            {photo && <img src={photo} alt="img" />}
+                        <div className="rounded bg-zinc-800 w-24 h-24">
+                            {photo && <img className="p-4" src={photo} alt="img" />}
 
                         </div>
                     </div>

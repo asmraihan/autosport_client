@@ -11,8 +11,8 @@ const CarRow = ({ singleCar,handleDelete }) => {
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
-                        <div className="rounded w-24 h-24">
-                            {photo && <img src={photo} alt="Avatar Tailwind CSS Component" />}
+                        <div className="rounded bg-zinc-800 w-24 h-24">
+                            {photo && <img className='p-4' src={photo} alt="photo" />}
                         </div>
                     </div>
                 </div>

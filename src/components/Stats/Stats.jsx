@@ -1,7 +1,7 @@
 
 const Stats = () => {
     return (
-     <div className="w-5/6 mx-auto">
+     <div className="w-4/6 mx-auto overflow-hidden">
            <div className="stats shadow p-10 w-full">
             <div className="stat">
                 <div className="stat-figure text-primary">
@@ -24,7 +24,7 @@ const Stats = () => {
             <div className="stat">
                 <div className="stat-figure text-secondary">
                     <div className="avatar online">
-                        <div className="w-16 rounded-full">
+                        <div className="w-32 rounded-full">
                             <img src="https://i.ibb.co/b2jhr4G/logo.png" />
                         </div>
                     </div>

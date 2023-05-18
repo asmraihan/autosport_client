@@ -15,7 +15,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="header">
+        <div className="header overflow-hidden">
             <Slider {...sliderSettings}>
 {/* 
 https://i.ibb.co/sgkNMdf/carbanner3.jpg
