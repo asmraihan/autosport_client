@@ -24,7 +24,8 @@ import PrivateRoute from "./PrivateRoute";
         },
         {
             path : '/allcars',
-            element : <AllCars></AllCars>
+            element : <AllCars></AllCars>,
+            loader: ()=> fetch('http://localhost:5000/allcars')
         },
         {
             path : '/mycars',
