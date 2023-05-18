@@ -113,7 +113,7 @@ const Login = () => {
           <div className='flex justify-center mt-4'>
             <p
 
-              className="text-gray-600"
+              className="text-gray-400"
             >
               Don’t have an account? <Link className='hover:underline hover:text-orange-600 ' to='/register'>Create an account</Link>
             </p>

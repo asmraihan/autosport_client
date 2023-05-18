@@ -19,7 +19,7 @@ const NavBar = () => {
             })
     }
     return (
-        <Link to='/' className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
+        <div className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
             <div className='flex justify-center items-center cursor-pointer nav-logo'>
                 <img className='w-16 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
                 <div className="svg-wrapper w-full font-bold ">
@@ -41,8 +41,12 @@ const NavBar = () => {
             <ul className='hidden md:flex font-semibold whitespace-nowrap'>
                 <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink>
                 <NavLink to='/allcars' className={({ isActive }) => (isActive ? 'active' : 'default')}>All Cars</NavLink>
-                <NavLink to='/mycars' className={({ isActive }) => (isActive ? 'active' : 'default')}>My Cars</NavLink>
+                {
+                    user && <>
+                    <NavLink to='/mycars' className={({ isActive }) => (isActive ? 'active' : 'default')}>My Cars</NavLink>
                 <NavLink to='/addcar' className={({ isActive }) => (isActive ? 'active' : 'default')}>Add Car</NavLink>
+                    </>
+                }
                 <NavLink to='/blog' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
                 {user && <div className='tooltip tooltip-bottom' data-tip={user.displayName ? user.displayName : 'User name unavailable'}>
                     <NavLink
@@ -64,7 +68,7 @@ const NavBar = () => {
                     </Link> :
                         <Link
                             to='/login'
-                            className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-primary normal-case'
+                            className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-primary normal-case '
                         >
                             Login
                         </Link>}
@@ -84,7 +88,7 @@ const NavBar = () => {
                 <li className='p-4 border-b border-gray-600'><Link to='/login' className='p-4'>Login</Link></li>
                 <li className='p-4 '> <Link className='p-4' to='/user'>User</Link></li>
             </ul>
-        </Link>
+        </div>
     );
 };
 

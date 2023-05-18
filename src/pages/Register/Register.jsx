@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -112,8 +112,17 @@ const Register = () => {
                 </button>
               </div>
             </form>
+           
             <div className='flex justify-center my-2 text-red-500'>
             <p >{error}</p>
+          </div>
+          <div className='flex justify-center mt-4'>
+            <p
+
+              className="text-gray-400"
+            >
+              Already have an account? <Link className='hover:underline hover:text-orange-600' to='/login'>Please Login</Link>
+            </p>
           </div>
           </div>
         </div>
