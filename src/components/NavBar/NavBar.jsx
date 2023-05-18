@@ -53,7 +53,7 @@ const NavBar = () => {
                         to='/user'
                         className={({ isActive }) => (isActive ? 'active' : 'default')}
                     >
-                        {user.photoURL ? <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" /> : <FaUser className='text-lg w-6 h-6'></FaUser>}
+                        {user.photoURL ? <img className='w-8 h-8 mx-4 rounded-full' src={user.photoURL} alt="" /> : <FaUser className='text-lg w-6 h-6 mx-4'></FaUser>}
 
 
                     </NavLink>

@@ -1,12 +1,36 @@
 [
     {
-        "name": "Harpoon X",
-        "quantity": "344",
-        "seller": "Manchester",
-        "taste": "sweet",
+        "name": "AAAAAAAAAn X",
+        "img": "https://i.ibb.co/C1x4mGv/car6.png",
+        "price": "125",
         "category": "S-Tier",
-        "details": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "photo": "https://i.ibb.co/C1x4mGv/car6.png"
+        "rating": "4.5",
+        "quantity": "344",
+        "seller": "User name",
+        "email": "asm@asm.com",
+        "details": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+    {
+        "name": "IOUSD X",
+        "img": "https://i.ibb.co/C1x4mGv/car6.png",
+        "price": "125",
+        "category": "A-Tier",
+        "rating": "4.5",
+        "quantity": "644",
+        "seller": "User name",
+        "email": "asm@asm.com",
+        "details": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+    {
+        "name": "Harpoon X",
+        "img": "https://i.ibb.co/C1x4mGv/car6.png",
+        "price": "125",
+        "category": "B-Tier",
+        "rating": "4.5",
+        "quantity": "444",
+        "seller": "User name",
+        "email": "asm@asm.com",
+        "details": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
 ]
 
