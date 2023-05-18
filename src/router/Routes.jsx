@@ -12,6 +12,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import UpdateCar from "../pages/UpdateCar/UpdateCar";
+import CarDetails from "../pages/CarDetails/CarDetails";
 
   const router = createBrowserRouter([
     {
@@ -27,6 +28,11 @@ import UpdateCar from "../pages/UpdateCar/UpdateCar";
             path : '/allcars',
             element : <AllCars></AllCars>,
             loader: ()=> fetch('http://localhost:5000/allcars')
+        },
+        {
+            path : '/car/:id',
+            element : <CarDetails></CarDetails>,
+            loader: ({params})=> fetch(`http://localhost:5000/car/${params.id}`)
         },
         {
             path : '/mycars',

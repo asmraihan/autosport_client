@@ -32,12 +32,12 @@ const CarRow = ({ singleCar,handleDelete }) => {
             </th>
             <td>
                <Link to={`/updatecar/${_id}`}>
-               <button  className="flex gap-1 items-center rounded-lg bg-[#fe9647] text-lg hover:scale-110 transition-all duration-300 p-2 font-bold text-white hover:bg-[#E56707] m-2 tooltip tooltip-right"
+               <button  className="flex gap-1 items-center rounded-lg bg-[#fe9647] text-lg hover:scale-110 transition-all duration-300 p-2 font-bold text-white hover:bg-[#e26200] m-2 tooltip tooltip-right"
                 data-tip="Edit">
                     <FaEdit></FaEdit>
                 </button>
                </Link>
-                <button onClick={()=>handleDelete(_id)} className="flex gap-1 items-center rounded-lg bg-[#db8484] text-lg hover:scale-110 transition-all duration-300 p-2  font-bold text-white hover:bg-[#e50707] m-2 tooltip tooltip-right"
+                <button onClick={()=>handleDelete(_id)} className="flex gap-1 items-center rounded-lg bg-[#ff5d5d] text-lg hover:scale-110 transition-all duration-300 p-2  font-bold text-white hover:bg-[#ad0000] m-2 tooltip tooltip-right"
                 data-tip="Delete">
                     <FaTimesCircle></FaTimesCircle>
                 </button>

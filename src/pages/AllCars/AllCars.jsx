@@ -6,17 +6,19 @@ const AllCars = () => {
     const allCars = useLoaderData()
     return (
         <div className="my-6 lg:my-12">
-            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock: <span className="text-orange-600"> {allCars?.length}</span>  </h3>
+            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock: <span className="text-orange-600"> {allCars?.length}</span></h3>
             <div className="overflow-x-auto w-5/6 mx-auto">
                 <table className="table table-zebra w-full">
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
-                            <th>Details</th>
-                            <th>Action</th>
+                            <th></th>
+                            <th>Seller</th>
+                            <th>Toy Name</th>
+                            <th>Sub-category</th>
+                            <th>Price</th>
+                            <th>Available Quantity</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
