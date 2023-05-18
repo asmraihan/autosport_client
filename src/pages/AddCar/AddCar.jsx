@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import Swal from 'sweetalert2'
 
 const AddCar = () => {
     const {user} = useContext(AuthContext)
@@ -16,7 +17,39 @@ const AddCar = () => {
         const rating = form.rating.value;
         const quantity = form.quantity.value;
         const details = form.details.value;
-        console.log()
+
+        const newCar = {
+            photo,
+            name,
+            seller,
+            email,
+            category,
+            price,
+            rating,
+            quantity,
+            details
+        }
+        console.log(newCar)
+        fetch('http://localhost:5000/addcar',{
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newCar)
+        })
+        .then(res=> res.json())
+        .then(data=> {
+            console.log(data)
+            if(data.insertedId){
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Added successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                }
+        })
     }
     return (
         <div className="p-10 rounded-lg lg:w-5/6 mx-auto">
@@ -33,7 +66,7 @@ const AddCar = () => {
                     <label className="label">
                         <span className="label-text">Name</span>
                     </label>
-                    <input type="text" name="name" placeholder="Toy name" className="input input-bordered" />
+                    <input type="text" name="name" placeholder="Toy name" className="input input-bordered" required/>
                 </div>
                 <div className="form-control">
                     <label className="label">
@@ -57,7 +90,7 @@ const AddCar = () => {
                     <label className="label">
                         <span className="label-text">Price</span>
                     </label>
-                    <input type="text" name="price" placeholder="Amount in $" className="input input-bordered" />
+                    <input type="text" name="price" placeholder="Amount in $" className="input input-bordered" required/>
                 </div>
                 <div className="form-control">
                     <label className="label">
