@@ -1,19 +1,28 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link, NavLink } from 'react-router-dom'
+import { AuthContext } from '../../provider/AuthProvider';
+import { FaUser } from 'react-icons/fa';
 
 
 const NavBar = () => {
+    const { user, logOut } = useContext(AuthContext)
     const [nav, setNav] = useState(false);
-
     const handleNav = () => {
         setNav(!nav);
     };
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => {
+                console.log(error)
+            })
+    }
     return (
         <Link to='/' className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
             <div className='flex justify-center items-center cursor-pointer nav-logo'>
                 <img className='w-16 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
-                <div className="svg-wrapper w-full  font-bold ">
+                <div className="svg-wrapper w-full font-bold ">
 
                     <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                         <rect id="shape" height="40" width="150" />
@@ -35,8 +44,32 @@ const NavBar = () => {
                 <NavLink to='/mycars' className={({ isActive }) => (isActive ? 'active' : 'default')}>My Cars</NavLink>
                 <NavLink to='/addcar' className={({ isActive }) => (isActive ? 'active' : 'default')}>Add Car</NavLink>
                 <NavLink to='/blog' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
-                <NavLink to='/login' className={({ isActive }) => (isActive ? 'active' : 'default')}>Login</NavLink>
-                <Link to='/user' className='p-6'>User</Link>
+                {user && <div className='tooltip tooltip-bottom' data-tip={user.displayName ? user.displayName : 'User name unavailable'}>
+                    <NavLink
+                        to='/user'
+                        className={({ isActive }) => (isActive ? 'active' : 'default')}
+                    >
+                        {user.photoURL ? <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" /> : <FaUser className='text-lg w-6 h-6'></FaUser>}
+
+
+                    </NavLink>
+                </div>}
+
+                <div className='mt-5'>
+                    {user ? <Link
+                        onClick={handleLogOut}
+                        className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-accent normal-case ml-5 mt-1'
+                    >
+                        Logout
+                    </Link> :
+                        <Link
+                            to='/login'
+                            className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-primary normal-case'
+                        >
+                            Login
+                        </Link>}
+                </div>
+
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}

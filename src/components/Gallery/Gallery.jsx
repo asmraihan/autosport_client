@@ -11,7 +11,7 @@ const Gallery = () => {
                 className="block h-full w-full rounded-lg object-cover object-center"
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
               />
-              <div className='bg-red-400 bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-gray-300 absolute inset-0 px-6 py-4 lg:flex flex-col hidden'>
+              <div className='bg-red-500/50 bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col hidden '>
                     <p>Image title</p>
                     <br />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate reprehenderit eaque suscipit dolorem? Enim exercitationem nostrum at voluptatem quam?...</p>           

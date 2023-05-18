@@ -1,9 +1,52 @@
-import { FaGoogle } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
+
 
 const Register = () => {
+  const { createUser,userProfileUpdate } = useContext(AuthContext)
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate()
+
+
+  const handleRegistration = (event) => {
+    event.preventDefault();
+    // console.log(name, email, password)
+   
+    if ( email && password) {
+      if (!/[0-9a-zA-Z]{6,}/.test(password)) {
+        setError("Password must be at least 6 character");
+        return
+      }
+      createUser(email, password)
+      .then(result=>{
+        const createdUser = result.user
+        // console.log(createdUser)
+        userProfileUpdate(name, photo)
+        .then(()=>{
+          console.log('User profile updated successfully')
+        })
+        .catch((err)=>{
+          console.log('Failed to update user profile', err)
+        })
+        navigate('/')
+      })
+      .catch(error=>{
+        setError(error.message)
+        console.log(error.message)
+      })
+    }else{
+      setError("Please input email & password")
+    }
+  }
+
+
     return (
-        <section className="min-h-screen flex items-stretch text-white ">
-        
+        <section className="min-h-screen flex items-stretch text-white ">    
         <div
           className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0"
           style={{ backgroundColor: "#161616" }}
@@ -19,12 +62,23 @@ const Register = () => {
           </div>
           <div className="w-full py-6 z-20">
             <h1 className="my-6">
-             <h2 className="text-3xl font-bold">Please Login</h2>
+             <h2 className="text-3xl font-bold">Sign Up</h2>
             </h1>
           
             <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
               <div className="pb-2 pt-4">
                 <input
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  className="block w-full p-4 text-lg rounded-sm bg-black"
+                />
+              </div>
+              <div className="pb-2 pt-4">
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   name="email"
                   id="email"
@@ -34,6 +88,7 @@ const Register = () => {
               </div>
               <div className="pb-2 pt-4">
                 <input
+                  onChange={(e) => setPassword(e.target.value)}
                   className="block w-full p-4 text-lg rounded-sm bg-black"
                   type="password"
                   name="password"
@@ -41,20 +96,26 @@ const Register = () => {
                   placeholder="Password"
                 />
               </div>
-              
+              <div className="pb-2 pt-4">
+                <input
+                  onChange={(e) => setPhoto(e.target.value)}
+                  type="text"
+                  name="photo"
+                  id="photo"
+                  placeholder="Photo URL"
+                  className="block w-full p-4 text-lg rounded-sm bg-black"
+                />
+              </div>
               <div className="mt-4">
-                <button className="btn btn-block">
-                  sign in
+                <button onClick={handleRegistration} className="btn btn-block">
+                  Sign Up
                 </button>
               </div>
             </form>
-            <p className="text-gray-100 my-6">__________OR__________</p>
-            <div className="space-x-2 flex justify-center items-center btn btn-outline btn-info sm:w-2/3 w-full mx-auto">
-             <h2>Login with Google</h2>
-              <FaGoogle></FaGoogle>
-            </div>
+            <div className='flex justify-center my-2 text-red-500'>
+            <p >{error}</p>
           </div>
-          
+          </div>
         </div>
         <div
           className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
