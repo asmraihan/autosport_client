@@ -1,9 +1,10 @@
-import React from 'react';
+
 import { FaEdit, FaTimesCircle } from 'react-icons/fa';
 
-const CarRow = ({ singleCar }) => {
-    const { photo, name, seller, email, category, price, rating, quantity, details } = singleCar
-    console.log(price)
+const CarRow = ({ singleCar,handleDelete }) => {
+    const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
+
+  
     return (
         <tr>
             <td>
@@ -33,7 +34,7 @@ const CarRow = ({ singleCar }) => {
                 data-tip="Edit">
                     <FaEdit></FaEdit>
                 </button>
-                <button className="flex gap-1 items-center rounded-lg bg-[#db8484] text-lg hover:scale-110 transition-all duration-300 p-2  font-bold text-white hover:bg-[#e50707] m-2 tooltip tooltip-right"
+                <button onClick={()=>handleDelete(_id)} className="flex gap-1 items-center rounded-lg bg-[#db8484] text-lg hover:scale-110 transition-all duration-300 p-2  font-bold text-white hover:bg-[#e50707] m-2 tooltip tooltip-right"
                 data-tip="Delete">
                     <FaTimesCircle></FaTimesCircle>
                 </button>
