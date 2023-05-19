@@ -8,7 +8,7 @@ const Testimonial = () => {
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
                             Testimonials
                         </h2>
-                        <p className="mb-8 font-light lg:mb-16 sm:text-xl text-gray-400">
+                        <p className="mb-8 lg:mb-16 sm:text-xl text-gray-400">
                             Explore the whole collection of open-source web components and
                             elements built with the utility classes from Tailwind
                         </p>

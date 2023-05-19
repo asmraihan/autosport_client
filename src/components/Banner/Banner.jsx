@@ -9,9 +9,10 @@ const Banner = () => {
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
+        fade: true,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
     };
 
     return (

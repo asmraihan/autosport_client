@@ -2,6 +2,7 @@
 import Banner from '../../components/Banner/Banner';
 import Faq from '../../components/Faq/Faq';
 import Gallery from '../../components/Gallery/Gallery';
+import Services from '../../components/Services/Services';
 import ShopCategory from '../../components/ShopCategory/ShopCategory';
 import Stats from '../../components/Stats/Stats';
 import Testimonial from '../../components/Testimonial/Testimonial';
@@ -15,6 +16,7 @@ const Home = () => {
          <ShopCategory></ShopCategory>
          <Gallery></Gallery>
          <Testimonial></Testimonial>
+         <Services></Services>
          <Stats></Stats>
          <Faq></Faq>
        </div>

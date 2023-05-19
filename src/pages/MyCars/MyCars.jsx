@@ -4,7 +4,13 @@ import CarRow from "./CarRow";
 import Swal from 'sweetalert2'
 import useTitle from "../../hooks/useTitle";
 
+const options = [
+    { value: 'ascending', label: 'Ascending' },
+    { value: 'descending', label: 'Descending' },
+]
+
 const MyCars = () => {
+    const [selectedOption, setSelectedOption] = useState(options[0])
     useTitle('My Cars')
     const { user } = useContext(AuthContext)
     const [myCars, setMyCars] = useState([])
