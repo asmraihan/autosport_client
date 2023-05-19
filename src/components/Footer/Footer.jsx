@@ -1,3 +1,4 @@
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -17,12 +18,10 @@ const Footer = () => {
                     </a>
                     <div className="mt-6 lg:max-w-sm">
                         <p className="text-sm text-gray-100">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam.
+                           Our company is leading manufacturer of toy cars in the world. We have been in this business for over 50 years and have been awarded many times for our quality and innovation.
                         </p>
                         <p className="mt-4 text-sm text-gray-100">
-                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.
+                            Come and join us in this journey of making the world a better place for kids.
                         </p>
                     </div>
                 </div>
@@ -33,23 +32,23 @@ const Footer = () => {
                     <div className="flex">
                         <p className="mr-1 text-gray-100">🔗Phone:</p>
                         <a
-                            href="tel:850-123-5021"
+                            href="tel:8801630490203"
                             aria-label="Our phone"
                             title="Our phone"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-100"
                         >
-                            850-123-5021
+                           +880 1630 490203
                         </a>
                     </div>
                     <div className="flex">
                         <p className="mr-1 text-gray-100">🔗Email:</p>
                         <a
-                            href="mailto:info@lorem.mail"
+                            href="autosport@mail.com"
                             aria-label="Our email"
                             title="Our email"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-100"
                         >
-                            info@lorem.mail
+                            autosport@mail.com
                         </a>
                     </div>
                     <div className="flex">
@@ -62,7 +61,7 @@ const Footer = () => {
                             title="Our address"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-100"
                         >
-                            312 Lovely Street, NY
+                            123 Lovely Street, NY
                         </a>
                     </div>
                 </div>
@@ -72,7 +71,7 @@ const Footer = () => {
                     </span>
                     <div className="flex items-center mt-4 space-x-3">
                         <a
-                            href="/"
+                            href="https://twitter.com/AsmRaihan4"
                             className="text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -80,16 +79,13 @@ const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="/"
+                            href="https://www.linkedin.com/in/asmraihan/"
                             className="text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
-                            <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
-                                <circle cx="15" cy="15" r="4" />
-                                <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                            </svg>
+                           <FaLinkedin className="w-6 h-6"></FaLinkedin>
                         </a>
                         <a
-                            href="/"
+                            href="https://www.facebook.com/asmraihanbh/"
                             className="text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -110,7 +106,7 @@ const Footer = () => {
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li>
                         <a
-                            href="/"
+                            href="https://github.com/asmraihan/"
                             className="text-sm text-gray-400 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
                             F.A.Q

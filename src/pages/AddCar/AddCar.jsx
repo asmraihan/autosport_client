@@ -31,7 +31,7 @@ const AddCar = () => {
             quantity,
             details
         }
-        console.log(newCar)
+        // console.log(newCar)
         fetch('https://autosport-server.vercel.app/addcar',{
             method: 'POST',
             headers: {

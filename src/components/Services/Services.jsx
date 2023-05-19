@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCarSide, FaTools } from 'react-icons/fa';
 
 const Services = () => {
     return (
@@ -7,20 +8,19 @@ const Services = () => {
                 <div className="max-w-6xl mx-auto px-5 py-24 ">
                     <div className="text-center mb-20">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
-                            Testimonials
+                           Services
                         </h2>
                         <p className="mb-8 lg:mb-16 sm:text-xl text-gray-400">
-                            Explore the whole collection of open-source web components and
-                            elements built with the utility classes from Tailwind
+                            Learn more about our services and policies. 
                         </p>
                         <div className="flex mt-6 justify-center">
                             <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex" />
                         </div>
                     </div>
-                    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-                        <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                    <div className="flex flex-col w-full lg:flex-row sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
-                                <div className="rounded bg-zinc-800 p-4 transform translate-x-6 -translate-y-6  ">
+                                <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4  ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
                                         <svg
                                             className="w-6 h-6"
@@ -37,80 +37,46 @@ const Services = () => {
                                             />
                                         </svg>{" "}
                                     </div>
-                                    <div className="flex-grow ">
+                                    <div className="flex-grow">
                                         <h2 className=" text-xl title-font font-medium mb-3">
-                                            Webdesign
+                                            Toy design
                                         </h2>
                                         <p className="leading-relaxed text-sm text-justify">
-                                            Donner du goût ? de la couleur aux applications, je le fais
-                                            afin de rendre vos sites attrayants ?. Avant de devenir
-                                            webdesigner, depuis tout petit j'étais déjà familier à la
-                                            couleur et du dessin.
+                                            Team of experts who are very good at designing toys. We have a wide range of toys for children of all ages. We have toys for all ages.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
-                                <div className="rounded bg-zinc-800 p-4 transform translate-x-6 -translate-y-6 ">
+                                <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4 ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
-                                        <svg
-                                            className="w-6 h-6"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth={2}
-                                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                                            />
-                                        </svg>
+                                      <FaTools className='w-5 h-5'></FaTools>
                                     </div>
                                     <div className="flex-grow">
                                         <h2 className=" text-xl title-font font-medium mb-3">
-                                            Intégration web
+                                        Toy manufacturing
                                         </h2>
                                         <p className="leading-relaxed text-sm text-justify">
-                                            Donner du goût ? de la couleur aux applications, je le fais
-                                            afin de rendre vos sites attrayants ?. Avant de devenir
-                                            webdesigner, depuis tout petit j'étais déjà familier à la
-                                            couleur et du dessin.
+                                           We have a team of experts who are very good at manufacturing toys. We have a wide range of toys for children of all ages. We also have toys for adults.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
-                                <div className="rounded bg-zinc-800 p-4 transform translate-x-6 -translate-y-6 ">
+                                <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4 ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
-                                        <svg
-                                            className="w-6 h-6"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth={2}
-                                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-                                            />
-                                        </svg>
+                                    <FaCarSide className='w-6 h-6'></FaCarSide>
                                     </div>
                                     <div className="flex-grow">
                                         <h2 className=" text-xl title-font font-medium mb-3">
-                                            Developpement Back-end
+                                           Doorstep delivery
                                         </h2>
                                         <p className="leading-relaxed text-sm text-justify">
-                                            Grâce à Php et ces frameworks (Larave, Symfoni, Slim), je peux
-                                            vous réaliser un site dynamique c'est-à-dire qui interagie
-                                            avec votre base de données ?. Nous pouvons essayer.
+                                           Our delivery service is very fast and reliable. To your doorstep in less than 24 hours. We also have a return policy if you are not satisfied with our products.
                                         </p>
                                     </div>
                                 </div>

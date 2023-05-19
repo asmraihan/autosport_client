@@ -9,21 +9,22 @@ const Testimonial = () => {
                             Testimonials
                         </h2>
                         <p className="mb-8 lg:mb-16 sm:text-xl text-gray-400">
-                            Explore the whole collection of open-source web components and
-                            elements built with the utility classes from Tailwind
+                            Find out what our customers are saying about us.
                         </p>
                     </div>
                     <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
                         <figure className="flex flex-col justify-center items-center p-8 text-center border-b md:p-12 lg:border-r bg-zinc-900 border-gray-700">
                             <blockquote className="mx-auto mb-8 max-w-2xl text-gray-400">
                                 <h3 className="text-lg font-semibold text-white">
-                                    Speechless with how easy this was to integrate
+                                 "Speechless with how it was so easy to order"
                                 </h3>
                                 <p className="my-4">
-                                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, earum provident iste maxime repellendus, ut eaque repudiandae, veniam dolorum dignissimos asperiores quia at! Rem, numquam rerum! Veniam excepturi quam iure.
+                                
+                                  Amazing customer service. I was speechless with how it was so easy to order and how fast it was delivered. I will definitely be ordering from them again.
+                                  
                                 </p>
                                 <p className="my-4">
-                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nulla vitae ab voluptas veniam voluptate deserunt temporibus. Eaque magni natus ratione quisquam quod ex alias, sapiente suscipit ipsa, mollitia ab!
+                                   Nice and easy to order. I was so happy with the service. I will definitely be ordering from them again.
                                 </p>
                                 <p className="my-4">
                                     If you care for your time, I hands down would go with this."
@@ -37,22 +38,22 @@ const Testimonial = () => {
                                 />
                                 <div className="space-y-0.5 font-medium text-white text-left">
                                     <div>Bonnie Green</div>
-                                    <div className="text-sm font-light ttext-gray-400">
-                                        Developer at Open AI
-                                    </div>
+                                  
                                 </div>
                             </figcaption>
                         </figure>
                         <figure className="flex flex-col justify-center items-center p-8 text-center border-b  md:p-12 bg-zinc-900/90 border-gray-700">
                             <blockquote className="mx-auto mb-8 max-w-2xl text-gray-400">
                                 <h3 className="text-lg font-semibold text-white">
-                                    Solid foundation for any project
+                                   "Solid Work and Great Support"
                                 </h3>
                                 <p className="my-4">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus assumenda vero corrupti voluptatum error ratione rem reiciendis deleniti. Iusto ullam hic consectetur labore molestiae, qui aperiam ea expedita iure.
+                                Got my order in 2 days. I was so happy with the service. I will definitely be ordering from them again.
                                 </p>
                                 <p className="my-4">
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores ipsum distinctio iste aperiam harum ab minus excepturi officiis iusto.
+                                You have many toys to choose from for your kids. I love the fact that 
+                                    you can use the cars as toys and as a collection. I am very happy with the service.
+
                                 </p>
                             </blockquote>
                             <figcaption className="flex justify-center items-center space-x-3">
@@ -63,27 +64,25 @@ const Testimonial = () => {
                                 />
                                 <div className="space-y-0.5 font-medium text-white text-left">
                                     <div>Roberta Casas</div>
-                                    <div className="text-sm font-light text-gray-400">
-                                        Lead designer at Dropbox
-                                    </div>
+                                  
                                 </div>
                             </figcaption>
                         </figure>
                         <figure className="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b lg:border-b-0 md:p-12 lg:border-r bg-zinc-900/90 border-gray-700">
                             <blockquote className="mx-auto mb-8 max-w-2xl text-gray-400">
                                 <h3 className="text-lg font-semibold text-white">
-                                    Mindblowing workflow and variants
+                                   "Mindblowing workflow and variants"
                                 </h3>
                                 <p className="my-4">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus hic recusandae architecto repellat incidunt!
                                 </p>
                                 <p className="my-4">
-                                    Everything is so well structured and simple to use (I've learnt so
-                                    much about Figma by just using the toolkit).
-                                </p>
-                                <p className="my-4">
-                                    Aesthetically, the well designed components are beautiful and will
-                                    undoubtedly level up your next application."
+                                    Everything is so well structured and clean .I've learnt so
+                                    much about cars and toys.
+                               
+                                
+                                    Aesthetically, the well designed toys are beautiful and will
+                                    undoubtedly will last for years to come.
                                 </p>
                             </blockquote>
                             <figcaption className="flex justify-center items-center space-x-3">
@@ -94,25 +93,22 @@ const Testimonial = () => {
                                 />
                                 <div className="space-y-0.5 font-medium text-white text-left">
                                     <div>Jese Leos</div>
-                                    <div className="text-sm font-light text-gray-400">
-                                        Software Engineer at Facebook
-                                    </div>
+                                   
                                 </div>
                             </figcaption>
                         </figure>
                         <figure className="flex flex-col justify-center items-center p-8 text-center md:p-12 bg-zinc-900 border-gray-700">
                             <blockquote className="mx-auto mb-8 max-w-2xl text-gray-400">
                                 <h3 className="text-lg font-semibold text-white">
-                                    Efficient Collaborating
+                                    "Efficient and quantity service"
                                 </h3>
                                 <p className="my-4">
                                     "This is a very complex and beautiful set of elements. Under the
-                                    hood it comes with the best things from 2 different worlds: Figma
-                                    and Tailwind.
+                                    hood it comes with the best things from 2 different worlds Cars and toys
                                 </p>
                                 <p className="my-4">
-                                    You have many examples that can be used to create a fast prototype
-                                    for your team."
+                                    You have many toys to choose from for your kids. I love the fact that 
+                                    you can use the cars as toys and as a collection. I am very happy with the service.
                                 </p>
                             </blockquote>
                             <figcaption className="flex justify-center items-center space-x-3">
@@ -123,9 +119,7 @@ const Testimonial = () => {
                                 />
                                 <div className="space-y-0.5 font-medium text-white text-left">
                                     <div>Joseph McFall</div>
-                                    <div className="text-sm font-light text-gray-400">
-                                        CTO at Google
-                                    </div>
+                                  
                                 </div>
                             </figcaption>
                         </figure>

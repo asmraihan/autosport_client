@@ -5,13 +5,13 @@ const ShopCategory = () => {
 
     const [cars, setCars] = useState([])
     const [activeTab, setActiveTab] = useState("Sports");
-    console.log(activeTab)
+    // console.log(activeTab)
     const url = `https://autosport-server.vercel.app/allcars/${activeTab}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => setCars(data))
-    }, [activeTab])
+    }, [activeTab,url])
 
     const handleTab = (categoryName) => {
         setActiveTab(categoryName);
@@ -53,7 +53,7 @@ const ShopCategory = () => {
                 </div>
             </div>
             {/* cards */}
-            <div className='grid grid-cols-3 gap-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-12'>
                 {
                     cars.map(car => <Card
                         key={car._id}

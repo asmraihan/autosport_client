@@ -1,5 +1,6 @@
 
 import Banner from '../../components/Banner/Banner';
+import Contact from '../../components/Contact/Contact';
 import Faq from '../../components/Faq/Faq';
 import Gallery from '../../components/Gallery/Gallery';
 import Services from '../../components/Services/Services';
@@ -16,9 +17,10 @@ const Home = () => {
          <ShopCategory></ShopCategory>
          <Gallery></Gallery>
          <Testimonial></Testimonial>
-         <Services></Services>
          <Stats></Stats>
+         <Services></Services>
          <Faq></Faq>
+         <Contact></Contact>
        </div>
 
     );
