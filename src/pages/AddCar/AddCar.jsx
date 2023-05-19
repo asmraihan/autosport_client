@@ -32,7 +32,7 @@ const AddCar = () => {
             details
         }
         console.log(newCar)
-        fetch('http://localhost:5000/addcar',{
+        fetch('https://autosport-server.vercel.app/addcar',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

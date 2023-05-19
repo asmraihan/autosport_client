@@ -20,7 +20,7 @@ const UpdateCar = () => {
             quantity: updatedQuantity,
             details: updatedDetails
         }
-        fetch(`http://localhost:5000/updatecar/${_id}`,{
+        fetch(`https://autosport-server.vercel.app/updatecar/${_id}`,{
             method: 'PATCH',
             headers: {
                 'content-Type': 'application/json'

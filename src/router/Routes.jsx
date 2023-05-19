@@ -31,7 +31,7 @@ import CarDetails from "../pages/CarDetails/CarDetails";
         {
             path : '/car/:id',
             element : <PrivateRoute><CarDetails></CarDetails></PrivateRoute>,
-            loader: ({params})=> fetch(`http://localhost:5000/car/${params.id}`)
+            loader: ({params})=> fetch(`https://autosport-server.vercel.app/car/${params.id}`)
         },
         {
             path : '/mycars',
@@ -41,7 +41,7 @@ import CarDetails from "../pages/CarDetails/CarDetails";
         {
           path : 'updatecar/:id',
           element: <UpdateCar></UpdateCar>,
-          loader: ({params})=> fetch(`http://localhost:5000/car/${params.id}`)
+          loader: ({params})=> fetch(`https://autosport-server.vercel.app/car/${params.id}`)
         },
         {
             path : '/addcar',

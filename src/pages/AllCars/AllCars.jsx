@@ -13,7 +13,7 @@ const AllCars = () => {
     // console.log(searchResult)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/all/${limit}`)
+        fetch(`https://autosport-server.vercel.app/all/${limit}`)
             .then(res => res.json())
             .then(data => setAllCars(data))
     }, [limit])

@@ -6,7 +6,7 @@ const ShopCategory = () => {
     const [cars, setCars] = useState([])
     const [activeTab, setActiveTab] = useState("Sports");
     console.log(activeTab)
-    const url = `http://localhost:5000/allcars/${activeTab}`
+    const url = `https://autosport-server.vercel.app/allcars/${activeTab}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

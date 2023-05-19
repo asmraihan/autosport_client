@@ -10,7 +10,7 @@ const MyCars = () => {
     const { user } = useContext(AuthContext)
     const [myCars, setMyCars] = useState([])
     const [sortOrder, setSortOrder] = useState('')
-    const url = `http://localhost:5000/mycars?email=${user?.email}&sort=${sortOrder}`
+    const url = `https://autosport-server.vercel.app/mycars?email=${user?.email}&sort=${sortOrder}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -34,7 +34,7 @@ const MyCars = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/deletecar/${id}`, {
+                fetch(`https://autosport-server.vercel.app/deletecar/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -68,8 +68,8 @@ const MyCars = () => {
             </select>
           </div>
 
-            <div className="w-5/6 mx-auto">
-                <table className="table table-zebra">
+            <div className="w-full mx-auto">
+                <table className="table table-zebra mx-auto w-11/12">
                     {/* head */}
                     <thead>
                         <tr>
