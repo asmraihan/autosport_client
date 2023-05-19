@@ -18,9 +18,9 @@ const CarRow = ({ singleCar,handleDelete }) => {
                 </div>
             </td>
             <td>
-                <span className="">{name}</span>
+                <span>{name}</span>
             </td>
-            <td>
+            <td className=''>
                 <span className="">Name : {seller}</span> <br />
                 <span className="">Email : {email}</span>
             </td>
@@ -36,7 +36,7 @@ const CarRow = ({ singleCar,handleDelete }) => {
             <td>
                 <span className="">{rating}</span>
             </td>
-            <td>
+            <td >
                 <span className="whitespace-normal">{details}</span>
             </td>  
            

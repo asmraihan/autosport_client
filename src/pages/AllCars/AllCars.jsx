@@ -21,7 +21,7 @@ const AllCars = () => {
         setSearchText(e.target.value)
     }
     const handleLimit =()=>{
-        console.log('limit test')
+        // console.log('limit test')
         setLimit()
     }
     return (

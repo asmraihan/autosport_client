@@ -30,7 +30,7 @@ import CarDetails from "../pages/CarDetails/CarDetails";
         },
         {
             path : '/car/:id',
-            element : <CarDetails></CarDetails>,
+            element : <PrivateRoute><CarDetails></CarDetails></PrivateRoute>,
             loader: ({params})=> fetch(`http://localhost:5000/car/${params.id}`)
         },
         {
