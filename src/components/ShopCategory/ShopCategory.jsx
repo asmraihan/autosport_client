@@ -22,7 +22,7 @@ const ShopCategory = () => {
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
                     Shop by Category
                 </h2>
-                <p className="font-light sm:text-xl text-gray-400">
+                <p className="text-xl text-gray-400">
                     Explore the whole collection of Toy cars with just a click of a button.
                 </p>
             </div>
@@ -53,7 +53,7 @@ const ShopCategory = () => {
                 </div>
             </div>
             {/* cards */}
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid grid-cols-3 gap-12'>
                 {
                     cars.map(car => <Card
                         key={car._id}

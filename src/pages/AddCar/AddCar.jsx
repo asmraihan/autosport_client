@@ -86,7 +86,7 @@ const AddCar = () => {
                     <label className="label">
                         <span className="label-text">Sub Category</span>
                     </label>
-                    <input type="text" name="category" placeholder="Category eg.(A-tier, C-tier)" className="input input-bordered" />
+                    <input type="text" name="category" placeholder="Category eg.(trucks, sports)" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                     <label className="label">

@@ -1,11 +1,22 @@
-import { useLoaderData } from "react-router-dom";
+
 import AllCarRow from "./AllCarRow";
 import useTitle from "../../hooks/useTitle";
+import { useEffect, useState } from "react";
 
 
 const AllCars = () => {
     useTitle('All Cars')
-    const allCars = useLoaderData()
+    const [allCars,setAllCars] = useState([]) 
+    const [limit,setLimit] = useState(20)
+    useEffect(() => {
+        fetch(`http://localhost:5000/allcars/${limit}`)
+            .then(res => res.json())
+            .then(data => setAllCars(data))
+    }, [limit])
+    const handleLimit =()=>{
+        console.log('limit test')
+        setLimit()
+    }
     return (
         <div className="my-6 lg:my-12">
             <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock : <span className="text-orange-600"> {allCars?.length}</span></h3>
@@ -46,6 +57,9 @@ const AllCars = () => {
 
                     </tbody>
                 </table>
+                <div className="w-full mx-auto flex justify-center my-4">
+                <button onClick={handleLimit} className="btn btn-accent text-white">Show All</button>
+                </div>
             </div>
         </div>
     );

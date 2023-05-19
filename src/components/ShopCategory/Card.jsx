@@ -1,5 +1,6 @@
 import { Rating } from '@smastrom/react-rating';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({ car }) => {
     const { _id, photo, name, price, rating } = car
@@ -25,11 +26,13 @@ const Card = ({ car }) => {
                         <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                             <rect id="shape" height="40" width="150" />
                         </svg>
+                        <Link to={`/car/${_id}`}>
                         <div className="text" id="see_all_btn">
                             <p className="flex justify-center items-center whitespace-nowrap mt-1">
                                 View Details
                             </p>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@ const AllCarRow = ({ singleCar }) => {
                 <span className="">{category}</span>
             </td>
             <td>
-                {price}
+                ${price}
             </td>
             <td>
                 {quantity}

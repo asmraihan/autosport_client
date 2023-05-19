@@ -26,8 +26,7 @@ import CarDetails from "../pages/CarDetails/CarDetails";
         },
         {
             path : '/allcars',
-            element : <AllCars></AllCars>,
-            loader: ()=> fetch('http://localhost:5000/allcars')
+            element : <AllCars></AllCars>
         },
         {
             path : '/car/:id',
