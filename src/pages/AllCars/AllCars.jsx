@@ -28,7 +28,7 @@ const AllCars = () => {
     }
     return (
         <div data-aos="fade-up" className="my-6 lg:my-12">
-            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock : <span className="text-orange-600"> {searchResult?.length}</span></h3>
+            <h3 className="text-2xl text-center my-8 font-semibold mx-10">Total number of toys in stock : <span className="text-orange-600"> {searchResult?.length}</span></h3>
 
            <div className="w-5/6 mx-auto my-6">
            <div className="form-control">

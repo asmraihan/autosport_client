@@ -69,7 +69,7 @@ const Login = () => {
         style={{ backgroundColor: "#161616" }}
       >
         <div
-          className="absolute lg:hidden min-h-full inset-0 mt-24 bg-gray-500 bg-no-repeat bg-cover items-center"
+          className="absolute lg:hidden min-h-full inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
           style={{
             backgroundImage:
               "url(https://i.ibb.co/CWb1vSC/bgcar.jpg)"

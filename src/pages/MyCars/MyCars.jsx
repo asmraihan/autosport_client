@@ -58,7 +58,7 @@ const MyCars = () => {
     return (
         <div data-aos="fade-up" className="my-6 lg:my-12">
 
-            <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys added by {user?.displayName} : <span className="text-orange-600"> {myCars?.length}</span>  </h3>
+            <h3 className="text-2xl text-center my-8 font-semibold mx-10">Total number of toys added by {user?.displayName} : <span className="text-orange-600"> {myCars?.length}</span>  </h3>
 
           <div className="w-5/6 mx-auto flex justify-end my-4">
           <select onChange={handleSort} defaultValue="" hidden className="select select-accent">

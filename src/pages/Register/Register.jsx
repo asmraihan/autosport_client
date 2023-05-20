@@ -54,7 +54,7 @@ const Register = () => {
           style={{ backgroundColor: "#161616" }}
         >
           <div
-            className="absolute lg:hidden mt-24 min-h-full z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
+            className="absolute lg:hidden  min-h-full z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
             style={{
               backgroundImage:
                 "url(https://i.ibb.co/gDmTmYy/bgcar2.jpg)"
