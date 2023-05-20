@@ -30,7 +30,7 @@ const Card = ({ car }) => {
                                 <div className="border-4 border-orange-500 absolute top-10 bottom-10 left-10 right-10 z-0" />
                 </figure>
             <div className="card-body">
-                <h2 className="card-title mb-4">{name}</h2>
+                <h2 className="card-title text-orange-400 mb-4">{name}</h2>
                 <p className="card-title text-base">Price : ${price}</p>
                <div className='flex'>
                <p className="card-title text-base">Rating : {rating}</p>

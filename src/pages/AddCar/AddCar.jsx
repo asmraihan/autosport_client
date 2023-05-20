@@ -44,12 +44,13 @@ const AddCar = () => {
             console.log(data)
             if(data.insertedId){
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'center',
                     icon: 'success',
                     title: 'Added successfully',
                     showConfirmButton: false,
                     timer: 1500
                   })
+                  form.reset()
                 }
         })
     }
@@ -92,19 +93,19 @@ const AddCar = () => {
                     <label className="label">
                         <span className="label-text">Price</span>
                     </label>
-                    <input type="text" name="price" placeholder="Amount in $" className="input input-bordered" required/>
+                    <input type="number" name="price" placeholder="Amount in $" className="input input-bordered" required/>
                 </div>
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Rating</span>
                     </label>
-                    <input type="text" name="rating" placeholder="Toy rating" className="input input-bordered" />
+                    <input type="number" name="rating" placeholder="Toy rating" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Quantity</span>
                     </label>
-                    <input type="text" name="quantity" placeholder="Available quantity" className="input input-bordered" />
+                    <input type="number" name="quantity" placeholder="Available quantity" className="input input-bordered" />
                 </div>
             </div>
             <div className="form-control mt-4">

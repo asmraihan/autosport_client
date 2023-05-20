@@ -1,10 +1,11 @@
 
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import useTitle from '../../hooks/useTitle';
 
 const UpdateCar = () => {
     useTitle('Update Car')
+    const navigate = useNavigate()
     const car = useLoaderData()
     const { _id , price, quantity, details } = car
 
@@ -38,6 +39,7 @@ const UpdateCar = () => {
                         showConfirmButton: false,
                         timer: 1500
                       })
+                      navigate('/mycars')
                 }
             })
       

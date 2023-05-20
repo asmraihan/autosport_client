@@ -13,7 +13,7 @@ const CarDetails = () => {
                 <div className="w-full max-w-6xl rounded bg-neutral-900/60 shadow-xl p-10 lg:p-20 mx-auto text-white relative md:text-left">
                     <div className="md:flex items-center -mx-10">
                         <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
-                            <h1 className="font-bold uppercase text-2xl  px-10">
+                            <h1 className="font-bold text-orange-500 uppercase text-2xl  px-10">
                                 {name}
                             </h1>
                             <div className="relative">
