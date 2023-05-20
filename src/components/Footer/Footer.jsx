@@ -25,7 +25,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm lg:mt-20">
                     <p className="text-base font-bold tracking-wide text-gray-200">
                         Contacts
                     </p>
@@ -65,7 +65,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="lg:mt-20">
                     <span className="text-base font-bold tracking-wide text-gray-200">
                         Social
                     </span>
@@ -94,8 +94,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <p className="mt-4 text-sm text-gray-300">
-                        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-                        spare ribs salami.
+                        Contact us anytime, we will get back to you within 2 working days.
                     </p>
                 </div>
             </div>

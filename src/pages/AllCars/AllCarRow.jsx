@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const AllCarRow = ({ singleCar }) => {
     const {user} = useContext(AuthContext)
-    const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
+    const { _id, photo, name, seller, email, category, price,  quantity } = singleCar
     const handleAlert = () => {
         if (!user) {
             // Swal.fire('You have to login first to view details')
@@ -49,8 +49,9 @@ const AllCarRow = ({ singleCar }) => {
                 {quantity}
             </td>
             <td>
-               <Link onClick={handleAlert} to={`/car/${_id}`}>
-               <button  className="btn btn-accent btn-sm text-white">View Details <FaArrowRight className="ml-1"></FaArrowRight></button>
+               <Link className="flex btn btn-accent btn-sm text-white flex-nowrap" onClick={handleAlert} to={`/car/${_id}`}>
+               <button className="">View Details</button>
+               <FaArrowRight className="ml-1"></FaArrowRight>
                </Link>
             </td>
         </tr>

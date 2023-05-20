@@ -17,7 +17,7 @@ const Gallery = () => {
               <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4 my-4">Plymouth Barracuda</p>
                     
-                    <p className="text-sm">The '68 Plymouth Barracuda Formula S is a sleek and fast muscle car that commands attention.</p>           
+                    <p className="text-sm">The `68 Plymouth Barracuda Formula S is a sleek and fast muscle car that commands attention.</p>           
                 </div>
             </div>
 
@@ -30,7 +30,7 @@ const Gallery = () => {
               <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4">Chevy Custom Nomad</p>
                     
-                    <p className="text-sm">The '55 Chevy Custom Nomad takes the classic Nomad wagon and gives it a customized twist.</p>           
+                    <p className="text-sm">The `55 Chevy Custom Nomad takes the classic Nomad wagon and gives it a customized twist.</p>           
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ const Gallery = () => {
                <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4">Corvette Racer</p>
                     
-                    <p className="text-sm">The '69 Corvette Racer is a high-performance Hot Wheels model that embodies speed and precision. Its aerodynamic design, sleek curves, and racing livery make it a true contender, paying tribute to the rich racing heritage of the Corvette. </p>           
+                    <p className="text-sm">The `69 Corvette Racer is a high-performance Hot Wheels model that embodies speed and precision. Its aerodynamic design, sleek curves, and racing livery make it a true contender, paying tribute to the rich racing heritage of the Corvette. </p>           
                 </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Gallery = () => {
               <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4">Datsun Bluebird 510 </p>
                     
-                    <p className="text-sm">The '71 Datsun Bluebird 510 Wagon combines vintage charm with a touch of practicality. With its retro styling, compact size, and versatile wagon body, this Hot Wheels model brings a cool and unique vibe to any collection.</p>           
+                    <p className="text-sm">The `71 Datsun Bluebird 510 Wagon combines vintage charm with a touch of practicality. With its retro styling, compact size, and versatile wagon body, this Hot Wheels model brings a cool and unique vibe to any collection.</p>           
                 </div>
             </div>
 
@@ -71,7 +71,7 @@ const Gallery = () => {
             <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4">Ford Mustang Coupe</p>
                     
-                    <p className="text-sm">The '67 Ford Mustang Coupe captures the essence of American muscle with its timeless design and legendary status.</p>           
+                    <p className="text-sm">The `67 Ford Mustang Coupe captures the essence of American muscle with its timeless design and legendary status.</p>           
                 </div>
             </div>
             <div className="w-1/2 p-1 md:p-2 overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl cursor-pointer">
@@ -83,7 +83,7 @@ const Gallery = () => {
            <div className='bg-black bg-opacity-75 opacity-0 hover:opacity-100 duration-200 text-white absolute inset-0 px-6 py-4 lg:flex flex-col justify-center items-center hidden'>
                     <p className="font-semibold my-4">Dodge Charger R/T</p>
                     
-                    <p className="text-sm">The '70 Dodge Charger R/T is an American muscle car icon known for its bold styling and high-performance capabilities.</p>           
+                    <p className="text-sm">The `70 Dodge Charger R/T is an American muscle car icon known for its bold styling and high-performance capabilities.</p>           
                 </div>
             </div>
           </div>

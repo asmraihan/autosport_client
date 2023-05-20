@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaCarSide, FaTools } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -6,9 +6,9 @@ AOS.init();
 
 const Services = () => {
     return (
-            <section data-aos="zoom-in-up" className="text-gray-200 bg-zinc-900">
+            <section className="text-gray-200 bg-zinc-900">
                 <div className="max-w-6xl mx-auto px-5 py-12 lg:py-16 ">
-                    <div className="text-center mb-20">
+                    <div data-aos="zoom-in-up" className="text-center mb-20">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
                            Services
                         </h2>
@@ -19,8 +19,8 @@ const Services = () => {
                             <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex" />
                         </div>
                     </div>
-                    <div className="flex flex-col w-full md:flex-row  sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                    <div className="flex flex-col w-full md:flex-row md:space-x-4 sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+                        <div data-aos="fade-up" className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
                                 <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4  ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
@@ -50,7 +50,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                        <div data-aos="fade-up" className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
                                 <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4 ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
@@ -67,7 +67,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+                        <div data-aos="fade-up" className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
                                 <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4 ">
                                     <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">

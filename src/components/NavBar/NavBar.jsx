@@ -94,7 +94,7 @@ const NavBar = () => {
                     <h3 className='font-semibold'>{user.displayName}</h3>
                 </div>}
 
-                <li className='p-4  border-b border-gray-600'> <NavLink className='p-4' to='/' >Home</NavLink></li>
+                <li className='p-4 border-b border-gray-600'> <NavLink className='p-4' to='/' >Home</NavLink></li>
                 <li className='p-4 border-b border-gray-600'><NavLink to='/allcars' className='p-4'>All Cars</NavLink></li>
                {
                      user && <>

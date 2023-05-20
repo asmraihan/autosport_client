@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useLoaderData } from 'react-router-dom';
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
@@ -6,7 +6,7 @@ import useTitle from '../../hooks/useTitle';
 const CarDetails = () => {
     useTitle('Car Details')
     const singleCar = useLoaderData()
-    const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
+    const {  photo, name, seller, email,  price, rating, quantity, details } = singleCar
     return (
         <>
             <div className="min-w-screen min-h-screen bg-zinc-800 flex items-center p-5 lg:p-10 overflow-hidden relative">

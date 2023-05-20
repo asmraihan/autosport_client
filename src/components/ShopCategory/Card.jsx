@@ -1,5 +1,5 @@
 import { Rating } from '@smastrom/react-rating';
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Swal from 'sweetalert2';

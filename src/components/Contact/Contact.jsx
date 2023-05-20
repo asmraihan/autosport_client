@@ -1,5 +1,5 @@
 
-import { FaEnvelope, FaPaperPlane, FaUser } from 'react-icons/fa';
+import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
 

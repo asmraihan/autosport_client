@@ -63,8 +63,8 @@ const MyCars = () => {
           <div className="w-5/6 mx-auto flex justify-end my-4">
           <select onChange={handleSort} defaultValue="" hidden className="select select-accent">
                 <option value="" disabled hidden>Sort by Price</option>
-                <option value="Ascending" className="font-semibold">Ascending</option>
-                <option value="Descending" className="font-semibold">Descending</option>
+                <option value="Ascending" className="font-semibold">Price Low to High</option>
+                <option value="Descending" className="font-semibold">Price High to Low</option>
             </select>
           </div>
 

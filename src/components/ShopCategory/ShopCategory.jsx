@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from './Card';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,21 +33,21 @@ const ShopCategory = () => {
                 <div className="tabs flex justify-center items-center">
                     <div
                         onClick={() => handleTab("Muscles")}
-                        className={`m-2 px-6 py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300 ${activeTab == "Muscles" ? " bg-orange-500 text-white" : "bg-zinc-800"
+                        className={`m-2 px-3 py-1 lg:px-6 lg:py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300 ${activeTab == "Muscles" ? " bg-orange-500 text-white" : "bg-zinc-800"
                             }`}
                     >
                        Muscles
                     </div>
                     <div
                         onClick={() => handleTab("Sports")}
-                        className={`m-2 px-6 py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300 ${activeTab == "Sports" ? " bg-orange-500 text-white" : "bg-zinc-800"
+                        className={`m-2 px-3 py-1 lg:px-6 lg:py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300 ${activeTab == "Sports" ? " bg-orange-500 text-white" : "bg-zinc-800"
                             }`}
                     >
                       Sports
                     </div>
                     <div
                         onClick={() => handleTab("Trucks")}
-                        className={`m-2 px-6 py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300  ${activeTab == "Trucks" ? " bg-orange-500 text-white" : "bg-zinc-800"
+                        className={`m-2 px-3 py-1 lg:px-6 lg:py-2 text-lg rounded font-semibold cursor-pointer transition-all duration-300  ${activeTab == "Trucks" ? " bg-orange-500 text-white" : "bg-zinc-800"
                             }`}
                     >
                         Trucks
@@ -55,7 +55,7 @@ const ShopCategory = () => {
                 </div>
             </div>
             {/* cards */}
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 w-full mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full mx-auto'>
                 {
                     cars.map(car => <Card
                         key={car._id}

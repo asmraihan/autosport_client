@@ -1,20 +1,19 @@
-import React from 'react';
 
 const Faq = () => {
     return (
-        <div data-aos="zoom-in-up" className='w-full lg:p-20 py-12 lg:py-20 bg-zinc-800 '>
-             <div className="text-center mb-12 lg:mb-20 w-5/6 mx-auto">
+        <div  className='w-full lg:p-20 py-12 lg:py-20 bg-zinc-800 '>
+             <div data-aos="zoom-in-up" className="text-center mb-12 lg:mb-20 w-5/6 mx-auto">
                     <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
                            Frequently Asked Questions
                         </h2>
                     </div>
-       <div className='w-5/6 mx-auto space-y-2'>
+       <div data-aos="fade-up" className='w-5/6 mx-auto space-y-2'>
        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                 How can I track my order?
                 </div>
                 <div className="collapse-content">
-                    <p>Tracking your order is easy! Once your order is shipped, you will receive a confirmation email with a tracking number. Simply click on the provided link or visit the carrier's website and enter your tracking number to stay updated on the status and location of your package.</p>
+                    <p>Tracking your order is easy! Once your order is shipped, you will receive a confirmation email with a tracking number. Simply click on the provided link or visit the carrier`s website and enter your tracking number to stay updated on the status and location of your package.</p>
                 </div>
             </div>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">

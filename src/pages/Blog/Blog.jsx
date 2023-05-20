@@ -34,9 +34,9 @@ const Blog = () => {
               <br />
               🔴 Access tokens are short-lived and used in requests to access resources, while refresh tokens are long-lived and used to acquire new access tokens when they expire.
 
-              Access Token Storage: One common approach is to store the access token in memory or a short-lived storage mechanism (e.g., in a memory variable) during the client's session. This ensures that the access token is only available as long as the user is actively using the application.
+              Access Token Storage: One common approach is to store the access token in memory or a short-lived storage mechanism (e.g., in a memory variable) during the client`s session. This ensures that the access token is only available as long as the user is actively using the application.
 
-              Refresh Token Storage: The recommended approach is to store refresh tokens in a secure HTTP-only cookie or local storage mechanism provided by the client's environment. This helps protect the refresh token from being accessed by malicious JavaScript code and reduces the risk of cross-site scripting (XSS) attacks.
+              Refresh Token Storage: The recommended approach is to store refresh tokens in a secure HTTP-only cookie or local storage mechanism provided by the client`s environment. This helps protect the refresh token from being accessed by malicious JavaScript code and reduces the risk of cross-site scripting (XSS) attacks.
             </p>
           </div>
           <div className="mb-10">
@@ -58,7 +58,7 @@ const Blog = () => {
             <p className="text-gray-400">
               🔴 SQL databases are vertically scalable, while NoSQL databases are horizontally scalable. SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores.
               <br />
-              🔴 Here's a comparison between SQL and NoSQL databases:
+              🔴 Here`s a comparison between SQL and NoSQL databases:
               <br />
               Data Model: <br />
               SQL databases use a structured data model based on tables with predefined schemas. They enforce a rigid structure with fixed columns and data types.
@@ -123,7 +123,7 @@ const Blog = () => {
             <p className="text-gray-400">
               🔴 In MongoDB, the aggregate method is used to perform advanced data aggregation operations on collections. It allows you to process and transform data using a pipeline of multiple stages. The aggregate pipeline consists of one or more stages, where each stage performs a specific operation on the input documents and passes the results to the next stage.
               <br />
-              🔴 Here's an overview of how the aggregate method works: <br />
+              🔴 Here`s an overview of how the aggregate method works: <br />
               Pipeline Stages: The aggregate pipeline consists of multiple stages, each represented by an object in an array. <br />
 
               Input Documents: The input documents are the documents from the collection on which the aggregation is performed. These documents flow through the pipeline, being processed and transformed at each stage.
