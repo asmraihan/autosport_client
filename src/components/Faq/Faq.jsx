@@ -2,9 +2,9 @@ import React from 'react';
 
 const Faq = () => {
     return (
-        <div className='w-full lg:p-20 py-20 bg-zinc-800 '>
-             <div className="text-center mb-20">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+        <div className='w-full lg:p-20 py-12 lg:py-20 bg-zinc-800 '>
+             <div className="text-center mb-12 lg:mb-20 w-5/6 mx-auto">
+                    <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
                            Frequently Asked Questions
                         </h2>
                     </div>

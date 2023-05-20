@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Card = ({ car }) => {
     const { _id, photo, name, price, rating } = car
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-neutral-900/40 shadow-xl">
             <figure className='relative'>
             <img
                                     src={photo}
@@ -21,7 +21,7 @@ const Card = ({ car }) => {
                <p className="card-title text-base">Rating : {rating}</p>
                 <Rating style={{ maxWidth: 120 }} value={Math.round(rating || 0)} readOnly/>
                </div>
-                <div className="card-actions justify-end cursor-pointer">
+                <div className="card-actions justify-end cursor-pointer mt-4">
                     <div className="svg-wrapper w-full font-bold ">
                         <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                             <rect id="shape" height="40" width="150" />

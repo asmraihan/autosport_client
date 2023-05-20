@@ -63,12 +63,13 @@ const Login = () => {
           </p>
         </div>
       </div>
+      {/* mobile starts */}
       <div
-        className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0"
+        className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0"
         style={{ backgroundColor: "#161616" }}
       >
         <div
-          className="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
+          className="absolute lg:hidden min-h-full inset-0 mt-24 bg-gray-500 bg-no-repeat bg-cover items-center"
           style={{
             backgroundImage:
               "url(https://i.ibb.co/CWb1vSC/bgcar.jpg)"
@@ -121,7 +122,7 @@ const Login = () => {
             </p>
           </div>
           <p className="text-gray-100 my-4">OR</p>
-          <div onClick={handleGoogleSignIn} className="space-x-2 flex justify-center items-center btn btn-outline btn-info sm:w-2/3 w-full mx-auto">
+          <div onClick={handleGoogleSignIn} className="space-x-2 flex justify-center items-center btn btn-outline btn-info w-5/6 lg:w-2/3 mx-auto">
             <h2>Login with Google</h2>
             <FaGoogle></FaGoogle>
           </div>

@@ -32,7 +32,7 @@ const AllCars = () => {
            <div className="form-control">
                 <div className="input-group w-full">
                     <input type="text"  onChange={handleSearch}  placeholder="Search…" className="input input-bordered w-full" />
-                    <button className="btn btn-square w-1/12">
+                    <button className="btn btn-disabled btn-square w-3/12 lg:w-1/12">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
                 </div>
@@ -64,10 +64,10 @@ const AllCars = () => {
 
                     </tbody>
                 </table>
+            </div>
                 <div className="w-full mx-auto flex justify-center my-4">
                 <button onClick={handleLimit} className={`btn btn-accent text-white ${limit==20 ? '' : 'hidden'}`}>Show All</button>
                 </div>
-            </div>
         </div>
     );
 };

@@ -23,9 +23,7 @@ const Testimonial = () => {
                                   Amazing customer service. I was speechless with how it was so easy to order and how fast it was delivered. I will definitely be ordering from them again.
                                   
                                 </p>
-                                <p className="my-4">
-                                   Nice and easy to order. I was so happy with the service. I will definitely be ordering from them again.
-                                </p>
+                              
                                 <p className="my-4">
                                     If you care for your time, I hands down would go with this."
                                 </p>
@@ -74,7 +72,7 @@ const Testimonial = () => {
                                    "Mindblowing workflow and variants"
                                 </h3>
                                 <p className="my-4">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus hic recusandae architecto repellat incidunt!
+                                   Nice and easy to order. I was so happy with the service. I will definitely be ordering from them again.
                                 </p>
                                 <p className="my-4">
                                     Everything is so well structured and clean .I've learnt so

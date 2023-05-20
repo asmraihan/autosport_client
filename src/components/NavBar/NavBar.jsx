@@ -19,7 +19,7 @@ const NavBar = () => {
             })
     }
     return (
-        <div className='flex justify-between items-center h-24 w-10/12 text-white mx-auto z-40'>
+        <div className='flex justify-between items-center h-24 w-11/12 lg:w-10/12 text-white mx-auto z-40'>
             <div className='flex justify-center items-center cursor-pointer nav-logo'>
               
                 <div className="svg-wrapper w-full font-bold ">
@@ -35,7 +35,7 @@ const NavBar = () => {
                         </p>
                     </div>
                 </div>
-                <img className='w-20 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
+                <img className='w-16 lg:w-20 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
             </div>
 
             {/* <Link to='/' className='w-full text-3xl font-bold text-[#df6800]'>AutoSport</Link> */}

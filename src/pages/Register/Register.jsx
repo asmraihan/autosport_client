@@ -54,7 +54,7 @@ const Register = () => {
           style={{ backgroundColor: "#161616" }}
         >
           <div
-            className="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
+            className="absolute lg:hidden mt-24 min-h-full z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center"
             style={{
               backgroundImage:
                 "url(https://i.ibb.co/gDmTmYy/bgcar2.jpg)"
@@ -63,9 +63,9 @@ const Register = () => {
             <div className="absolute bg-black opacity-60 inset-0 z-0" />
           </div>
           <div className="w-full py-6 z-20">
-            <h1 className="my-6">
+            <div className="my-6">
              <h2 className="text-3xl font-bold">Sign Up</h2>
-            </h1>
+            </div>
           
             <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
               <div className="pb-2 pt-4">

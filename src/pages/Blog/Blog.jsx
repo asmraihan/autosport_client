@@ -5,9 +5,9 @@ const Blog = () => {
     return (
         <div>
         <section className="bg-zinc-800">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-white">
-              Frequently asked questions
+          <div className="py-8 px-8 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <h2 className="mb-8 text-2xl lg:text-4xl tracking-tight font-extrabold text-white">
+              Question & Answer Section
             </h2>
             <div className="grid pt-8 text-left border-t md:gap-16 border-gray-700 md:grid-cols-2">
           

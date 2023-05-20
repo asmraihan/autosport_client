@@ -5,7 +5,7 @@ const Services = () => {
     return (
         <div>
             <section className="text-gray-200 bg-zinc-900">
-                <div className="max-w-6xl mx-auto px-5 py-24 ">
+                <div className="max-w-6xl mx-auto px-5 py-12 lg:py-16 ">
                     <div className="text-center mb-20">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
                            Services

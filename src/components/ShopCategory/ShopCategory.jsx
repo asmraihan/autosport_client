@@ -19,15 +19,15 @@ const ShopCategory = () => {
     return (
         <div className='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6'>
             <div className="mx-auto max-w-screen-sm">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+                <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
                     Shop by Category
                 </h2>
-                <p className="text-xl text-gray-400">
+                <p className="lg:text-xl text-gray-400">
                     Explore the whole collection of Toy cars with just a click of a button.
                 </p>
             </div>
             {/* tabs */}
-            <div className='my-16'>
+            <div className=' my-8 lg:my-16'>
                 <div className="tabs flex justify-center items-center">
                     <div
                         onClick={() => handleTab("Muscles")}

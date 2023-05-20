@@ -21,7 +21,7 @@ const Contact = () => {
                     <input
                         type="name"
                         id="name"
-                        className="relative flex p-2.5  dark:text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100"
+                        className="relative flex p-2.5  dark:text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-orange-600/70"
                         placeholder="User name"
 
                         required=""
@@ -37,7 +37,7 @@ const Contact = () => {
                     <input
                         type="email"
                         id="email"
-                        className="relative flex p-2.5  text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100"
+                        className="relative flex p-2.5  text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-orange-600/70"
                         placeholder="Enter your email"
                         required=""
                     />
@@ -53,7 +53,7 @@ const Contact = () => {
                     <textarea
                         id="message"
                         rows={4}
-                        className="relative flex p-2.5  text-white rounded-lg bg-gray-500/5 hover:bg-gray-500/10  outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100 resize-none"
+                        className="relative flex p-2.5  text-white rounded-lg bg-gray-500/5 hover:bg-gray-500/10  outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-orange-600/70 resize-none"
                         placeholder="Leave a message..."
                         defaultValue={""}
                     />

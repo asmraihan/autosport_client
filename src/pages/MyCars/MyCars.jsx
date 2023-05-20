@@ -68,7 +68,7 @@ const MyCars = () => {
             </select>
           </div>
 
-            <div className="w-full mx-auto">
+            <div className="overflow-x-auto w-full mx-auto">
                 <table className="table table-zebra mx-auto w-11/12">
                     {/* head */}
                     <thead>
