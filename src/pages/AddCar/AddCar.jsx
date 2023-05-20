@@ -54,7 +54,7 @@ const AddCar = () => {
         })
     }
     return (
-        <div className="p-10 rounded-lg lg:w-5/6 mx-auto">
+        <div data-aos="fade-up" className="lg:p-10 mt-10 rounded-lg lg:w-5/6 mx-auto">
         <h2 className="text-3xl font-extrabold text-center">Add a toy here</h2>
         <form onSubmit={handleAddCar} className="p-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

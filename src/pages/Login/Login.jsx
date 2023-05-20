@@ -45,7 +45,7 @@ const Login = () => {
       }
 
   return (
-    <section className="min-h-screen flex items-stretch text-white ">
+    <section data-aos="fade-up" className="min-h-screen flex items-stretch text-white ">
       <div
         className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center"
         style={{

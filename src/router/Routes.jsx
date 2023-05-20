@@ -45,7 +45,7 @@ import CarDetails from "../pages/CarDetails/CarDetails";
         },
         {
             path : '/addcar',
-            element : <AddCar></AddCar>
+            element : <PrivateRoute><AddCar></AddCar></PrivateRoute>
         },
         {
             path : '/blog',

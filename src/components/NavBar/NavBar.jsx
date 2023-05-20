@@ -35,7 +35,7 @@ const NavBar = () => {
                         </p>
                     </div>
                 </div>
-                <img className='w-16 lg:w-20 hover:translate-x-6 transition-all duration-200' src="car.png" alt="" />
+                <img className='w-16 lg:w-20 hover:translate-x-6 transition-all duration-200' src="https://i.ibb.co/b2jhr4G/logo.png" alt="" />
             </div>
 
             {/* <Link to='/' className='w-full text-3xl font-bold text-[#df6800]'>AutoSport</Link> */}
@@ -80,14 +80,49 @@ const NavBar = () => {
                 {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
             <ul className={nav ? 'fixed left-0 top-0 w-[80%] h-full z-50 border-r border-r-gray-900 bg-[#282828] ease-in-out duration-500 text-white font-semibold' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-                <h1 className='w-full text-3xl font-bold text-[#df6800] m-4'>AutoSport</h1>
-                <li className='p-4 border-b border-gray-600'> <Link to='/' >Home</Link></li>
-                <li className='p-4 border-b border-gray-600'><Link to='/allcars' className='p-4'>All Cars</Link></li>
-                <li className='p-4 border-b border-gray-600'><Link to='/mycars' className='p-4'>My Cars</Link></li>
-                <li className='p-4 border-b border-gray-600'><Link to='/addcar' className='p-4'>Add Car</Link></li>
-                <li className='p-4 border-b border-gray-600'><Link to='/blog' className='p-4'>Blog</Link></li>
-                <li className='p-4 border-b border-gray-600'><Link to='/login' className='p-4'>Login</Link></li>
-                <li className='p-4 '> <Link className='p-4' to='/user'>User</Link></li>
+
+            {user && 
+            <div className='flex items-center'>
+                    <NavLink
+                        to='/user'
+                        className={({ isActive }) => (isActive ? 'active' : 'default')}
+                    >
+                        {user.photoURL ? <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" /> : <FaUser className='text-lg w-6 h-6'></FaUser>}
+
+
+                    </NavLink>
+                    <h3 className='font-semibold'>{user.displayName}</h3>
+                </div>}
+
+                <li className='p-4  border-b border-gray-600'> <NavLink className='p-4' to='/' >Home</NavLink></li>
+                <li className='p-4 border-b border-gray-600'><NavLink to='/allcars' className='p-4'>All Cars</NavLink></li>
+               {
+                     user && <>
+                      <li className='p-4 border-b border-gray-600'><NavLink to='/mycars' className='p-4'>My Cars</NavLink></li>
+                <li className='p-4 border-b border-gray-600'><NavLink to='/addcar' className='p-4'>Add Car</NavLink></li>
+                     </>
+               }
+                <li className='p-4 border-b border-gray-600'><NavLink to='/blog' className='p-4'>Blog</NavLink></li>
+                {/* <li className='p-4 border-b border-gray-600'><Link to='/login' className='p-4'>Login</Link></li> */}
+
+               
+
+                <div className='mt-5'>
+                    {user ? <Link
+                        onClick={handleLogOut}
+                        className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-accent normal-case ml-5 mt-1'
+                    >
+                        Logout
+                    </Link> :
+                        <Link
+                            to='/login'
+                            className='inline-flex justify-center items-center py-2 px-5 font-medium text-center text-white btn btn-sm btn-primary normal-case ml-5'
+                        >
+                            Login
+                        </Link>}
+                </div>
+
+
             </ul>
         </div>
     );

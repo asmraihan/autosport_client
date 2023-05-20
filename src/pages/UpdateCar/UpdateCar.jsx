@@ -32,7 +32,7 @@ const UpdateCar = () => {
                 console.log(data)
                 if(data.modifiedCount > 0){
                     Swal.fire({
-                        position: 'top-end',
+                        position: 'center',
                         icon: 'success',
                         title: 'Updated successfully',
                         showConfirmButton: false,
@@ -44,10 +44,10 @@ const UpdateCar = () => {
     }
 
     return (
-        <div className="card flex-shrink-0 w-5/6 lg:w-4/6 my-12 mx-auto shadow-2xl bg-base-100">
-            <h3 className="text-2xl text-center my-8 font-semibold">Update <span className='text-orange-600'>{car.name}</span></h3>
+        <div data-aos="fade-up" className="card flex-shrink-0 lg:w-4/6 my-12 mx-auto lg:shadow-2xl bg-base-100">
+            <h3 className="text-2xl text-center font-semibold lg:pt-12">Update <span className='text-orange-600'>{car.name}</span></h3>
             <div className="card-body">
-                <form onSubmit={handleUpdate} className="p-10">
+                <form onSubmit={handleUpdate} className="">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Price</span>

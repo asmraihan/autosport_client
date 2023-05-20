@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaCarSide, FaTools } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Services = () => {
     return (
-        <div>
-            <section className="text-gray-200 bg-zinc-900">
+            <section data-aos="zoom-in-up" className="text-gray-200 bg-zinc-900">
                 <div className="max-w-6xl mx-auto px-5 py-12 lg:py-16 ">
                     <div className="text-center mb-20">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
@@ -17,7 +19,7 @@ const Services = () => {
                             <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex" />
                         </div>
                     </div>
-                    <div className="flex flex-col w-full lg:flex-row sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+                    <div className="flex flex-col w-full md:flex-row  sm:-m-4 -mx-4 -mb-10 -mt-4 ">
                         <div className="lg:p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
                             <div className="pattern-dots-md gray-light">
                                 <div className="rounded bg-zinc-800 p-4 transform translate-x-4 -translate-y-4  ">
@@ -42,7 +44,7 @@ const Services = () => {
                                             Toy design
                                         </h2>
                                         <p className="leading-relaxed text-sm text-justify">
-                                            Team of experts who are very good at designing toys. We have a wide range of toys for children of all ages. We have toys for all ages.
+                                            Team of experts who are very good at designing toys. We have a wide range of toys for children of all ages. We have toys for all ages. Follow us on  for more.
                                         </p>
                                     </div>
                                 </div>
@@ -85,7 +87,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-        </div>
+
 
     );
 };

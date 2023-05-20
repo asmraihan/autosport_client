@@ -1,8 +1,10 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 const Testimonial = () => {
     return (
-        <div>
-            <div className="bg-zinc-800">
+   
+            <div data-aos="zoom-in-up" className="bg-zinc-800">
                 <section className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                     <div className="mx-auto max-w-screen-sm">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
@@ -124,7 +126,7 @@ const Testimonial = () => {
                     </div>
                 </section>
             </div>
-        </div>
+       
 
     );
 };

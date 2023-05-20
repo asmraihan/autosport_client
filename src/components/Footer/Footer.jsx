@@ -11,7 +11,7 @@ const Footer = () => {
                         title="Company"
                         className="inline-flex items-center"
                     >
-                       <img className="w-16 grayscale hover:grayscale-0 transition-all duration-300" src="car.png" alt="" />
+                       <img className="w-16 grayscale hover:grayscale-0 transition-all duration-300" src="https://i.ibb.co/b2jhr4G/logo.png" alt="" />
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
                             AutoSport
                         </span>
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-gray-600 lg:flex-row">
                 <p className="text-sm text-gray-400">
-                    © Copyright 2020 Lorem Inc. All rights reserved.
+                    © Copyright 2023 AutoSport Inc. All rights reserved.
                 </p>
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li>

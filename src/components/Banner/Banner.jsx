@@ -16,7 +16,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="header overflow-hidden">
+        <div data-aos="zoom-in" className="header overflow-hidden">
             <Slider {...sliderSettings}>
             <div className="relative">
                     <img className='w-full mx-auto bg-cover' src='https://i.ibb.co/GCSPB2P/carbanner2.jpg' alt="Car Toy 1" />

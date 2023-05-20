@@ -1,17 +1,10 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Gallery = () => {
-  /* 
-  https://i.ibb.co/hmWfrQ0/alex-zabavsky-WCQKa-C2ffjs-unsplash.jpg
-https://i.ibb.co/XkxH7sh/ani-adigyozalyan-5-Ih37y-Zz-Lgs-unsplash.jpg
-https://i.ibb.co/Gtvtq2t/i-nyoman-adi-wiraputra-6s-N-R1-Muspo-unsplash.jpg
-https://i.ibb.co/BzdRJ7C/i-nyoman-adi-wiraputra-ID11-Bp-E0-REM-unsplash.jpg
-https://i.ibb.co/7n9mwd9/jeffrey-grospe-Rir-LE8-Ec-X4w-unsplash.jpg
-https://i.ibb.co/MRwv0FK/serhii-kalyn-ZILK-6o-V6-M-unsplash.jpg
-https://i.ibb.co/ZcP6Mqj/svetjekolem-2m56d-FKn-Dxw-unsplash.jpg
-  */
 
     return (
-        <div className="container mx-auto px-5 py-6 lg:px-32 lg:py-32">
+        <div data-aos="fade-up" data-aos-duration="500"  className="container mx-auto px-5 py-6 lg:px-32 lg:py-32">
         <div className="-m-1 flex flex-wrap md:-m-2">
           <div className="flex w-1/2 flex-wrap">
 

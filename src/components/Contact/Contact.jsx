@@ -4,7 +4,7 @@ import { FaEnvelope, FaPaperPlane, FaUser } from 'react-icons/fa';
 const Contact = () => {
 
     return (
-        <div className='lg:w-4/6 w-5/6 mx-auto my-20'>
+        <div data-aos="fade-up" className='lg:w-4/6 w-5/6 mx-auto my-20'>
             <form>
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="text-sm mt-1 text-gray-500">

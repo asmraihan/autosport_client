@@ -56,7 +56,7 @@ const MyCars = () => {
     }
 
     return (
-        <div className="my-6 lg:my-12">
+        <div data-aos="fade-up" className="my-6 lg:my-12">
 
             <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys added by {user?.displayName} : <span className="text-orange-600"> {myCars?.length}</span>  </h3>
 

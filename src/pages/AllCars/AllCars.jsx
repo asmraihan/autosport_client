@@ -2,7 +2,9 @@
 import AllCarRow from "./AllCarRow";
 import useTitle from "../../hooks/useTitle";
 import { useEffect, useState } from "react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const AllCars = () => {
     useTitle('All Cars')
@@ -25,7 +27,7 @@ const AllCars = () => {
         setLimit()
     }
     return (
-        <div className="my-6 lg:my-12">
+        <div data-aos="fade-up" className="my-6 lg:my-12">
             <h3 className="text-2xl text-center my-8 font-semibold">Total number of toys in stock : <span className="text-orange-600"> {searchResult?.length}</span></h3>
 
            <div className="w-5/6 mx-auto my-6">

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const ShopCategory = () => {
 
     const [cars, setCars] = useState([])
@@ -17,7 +19,7 @@ const ShopCategory = () => {
         setActiveTab(categoryName);
     };
     return (
-        <div className='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6'>
+        <div data-aos="zoom-in-up" className='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6'>
             <div className="mx-auto max-w-screen-sm">
                 <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
                     Shop by Category
@@ -27,7 +29,7 @@ const ShopCategory = () => {
                 </p>
             </div>
             {/* tabs */}
-            <div className=' my-8 lg:my-16'>
+            <div className='my-8 lg:my-16'>
                 <div className="tabs flex justify-center items-center">
                     <div
                         onClick={() => handleTab("Muscles")}
@@ -53,7 +55,7 @@ const ShopCategory = () => {
                 </div>
             </div>
             {/* cards */}
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 w-full mx-auto'>
                 {
                     cars.map(car => <Card
                         key={car._id}

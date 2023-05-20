@@ -1,11 +1,26 @@
 import { Rating } from '@smastrom/react-rating';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Card = ({ car }) => {
+    const { user } = useContext(AuthContext)
     const { _id, photo, name, price, rating } = car
+    const handleAlert = () => {
+        if (!user) {
+            // Swal.fire('You have to login first to view details')
+            Swal.fire({
+                position: 'center',
+                icon: 'info',
+                title: 'You have to login first to view details',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
+    }
     return (
-        <div className="card w-96 bg-neutral-900/40 shadow-xl">
+        <div data-aos="zoom-in-down" className="card bg-neutral-900/40 shadow-xl">
             <figure className='relative'>
             <img
                                     src={photo}
@@ -26,7 +41,7 @@ const Card = ({ car }) => {
                         <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                             <rect id="shape" height="40" width="150" />
                         </svg>
-                        <Link to={`/car/${_id}`}>
+                        <Link onClick={handleAlert} to={`/car/${_id}`}>
                         <div className="text" id="see_all_btn">
                             <p className="flex justify-center items-center whitespace-nowrap mt-1">
                                 View Details

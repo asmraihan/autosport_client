@@ -1,9 +1,25 @@
+import { useContext } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const AllCarRow = ({ singleCar }) => {
+    const {user} = useContext(AuthContext)
     const { _id, photo, name, seller, email, category, price, rating, quantity, details } = singleCar
+    const handleAlert = () => {
+        if (!user) {
+            // Swal.fire('You have to login first to view details')
+            Swal.fire({
+                position: 'center',
+                icon: 'info',
+                title: 'You have to login first to view details',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
+    }
     return (
         <tr>
             <td>
@@ -33,7 +49,7 @@ const AllCarRow = ({ singleCar }) => {
                 {quantity}
             </td>
             <td>
-               <Link to={`/car/${_id}`}>
+               <Link onClick={handleAlert} to={`/car/${_id}`}>
                <button  className="btn btn-accent btn-sm text-white">View Details <FaArrowRight className="ml-1"></FaArrowRight></button>
                </Link>
             </td>
